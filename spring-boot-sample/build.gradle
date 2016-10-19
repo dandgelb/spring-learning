@@ -8,6 +8,7 @@ buildscript {
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 		classpath("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+		classpath("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
 	}
 }
 
@@ -30,5 +31,6 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
